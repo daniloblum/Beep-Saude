@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Bootstrap 101 Template</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">  
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <!-- Header -->
+        
+        <div class="nav navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="images/logo-1.png">
+                    </a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Histórico</a></li>
+                    <li><a href="">Administração</a></li>
+                    <li><a href="">Sair</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Conteúdo -->
+      
+        <div class="container-fluid">
+        
+            <!-- Titulo -->
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title padding-25">
+                        <h3>Atendimentos em andamento/realizados</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filtro -->
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="padding-25">
+                        <ul class="list-inline filter margin-0">
+                          <li class="filter-list">
+                              <div class="btn-group">
+                                  <button class="btn btn-default btn-date-arrow" type="button"><span class="glyphicon glyphicon-menu-left"></span></button>
+                                  <button class="btn btn-default btn-date" type="button">Hoje, 19/04/2018</button>
+                                  <button class="btn btn-default btn-date-arrow" type="button"><span class="glyphicon glyphicon-menu-right"></span></button>
+                              </div>
+                          </li>
+                          
+                          <li class="filter-list">
+                              <label class="filter-label">Local</label>
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-dropdown">Domiciliar e Clínica</button>
+                                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="glyphicon glyphicon-menu-down"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="#">Domiciliar e Clínica</a></li>
+                                      <li><a href="#">Apenas Clínica</a></li>
+                                      <li><a href="#">Apenas Domiciliar</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                  
+                          <li class="filter-list">
+                              <label class="filter-label">Parceiros</label>   
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-dropdown">Todos</button>
+                                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="glyphicon glyphicon-menu-down"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="#">Todos</a></li>
+                                      <li><a href="#">Lâmina Icaraí</a></li>
+                                      <li><a href="#">Beep Vacinas</a></li>
+                                      <li><a href="#">Lâmina Barra</a></li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Atendimento -->
+            
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="padding-25">
+                        <div class="row margin-0">
+                            
+                            <div class="col-md-2">
+                                <div class="row attendance-left equal-height">
+                                    <div class="col-md-3">
+                                        <div class="circular-house">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <ul class="attendance-list">
+                                            <li><h5>Vacinação</h5></li>
+                                            <li><h5 class="text-bold margin-bottom-30">Domiciliar</h5></li>
+                                            <li><h5>19/04/2018</h5></li>
+                                            <li><h3 class="text-bold margin-0">08:00</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row attendance-center equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h3>Ross</h3></li>
+                                        <li><h5 class="margin-bottom-30">Pedido <span class="text-bold">8381</span></h5></li>
+                                        <li><h5>1 Meningocócica B</h5></li>
+                                        <li><h5>2 ACWY Menveo</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row attendance-right equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h5>Parceiro: Beep Vacinas</h5></li>
+                                        <li><h5><span class="text-bold">Manhattan</span> 90 Bedford St, New York, NY 10014, EUA</h5></li>
+                                        <li><h5>(21)99154-2589</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="padding-25">
+                        <div class="row margin-0">
+                            
+                            <div class="col-md-2">
+                                <div class="row attendance-left equal-height">
+                                    <div class="col-md-3">
+                                        <div class="circular-house">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <ul class="attendance-list">
+                                            <li><h5>Vacinação</h5></li>
+                                            <li><h5 class="text-bold margin-bottom-30">Domiciliar</h5></li>
+                                            <li><h5>19/04/2018</h5></li>
+                                            <li><h3 class="text-bold margin-0">09:00</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row attendance-center equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h3>Rachel Karen Green</h3></li>
+                                        <li><h5 class="margin-bottom-30">Pedido <span class="text-bold">6831</span></h5></li>
+                                        <li><h5>1 ACWY Menveo</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row attendance-right equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h5>Parceiro: Beep Vacinas</h5></li>
+                                        <li><h5>1-15 Morton St, New York, NY 10014, EUA</h5></li>
+                                        <li><h5>(21)99154-2589</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="padding-25">
+                        <div class="row margin-0">
+                            
+                            <div class="col-md-2">
+                                <div class="row attendance-left equal-height">
+                                    <div class="col-md-3">
+                                        <div class="circular-hospital">
+                                            <i class="far fa-hospital"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <ul class="attendance-list">
+                                            <li><h5>Vacinação</h5></li>
+                                            <li><h5 class="text-bold margin-bottom-30">Clínica</h5></li>
+                                            <li><h5>19/04/2018</h5></li>
+                                            <li><h3 class="text-bold margin-0">09:00</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row attendance-center equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h3>Phoebe Buffay-Hannigan</h3></li>
+                                        <li><h5 class="margin-bottom-30">Pedido <span class="text-bold">2589</span></h5></li>
+                                        <li><h5>1 Meningocócica B</h5></li>
+                                        <li><h5>1 ACWY Menveo</h5></li>
+                                        <li><h5>1 BCG</h5></li>
+                                        <li><h5>1 Pneumocócica 13</h5></li>
+                                        <li><h5>1 Rotavírus</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row attendance-right equal-height">
+                                    <ul class="attendance-list">
+                                        <li><h5>Parceiro: Lâmina Barra</h5></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                      
+        </div> <!-- Fim do Conteúdo -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center">
+          <div>
+              <p>Powered by: <span class="footer-brand"><img src="images/logo-2.png"></span></p>  
+          </div>
+          
+          
+          
+          
+          
+      </div>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
